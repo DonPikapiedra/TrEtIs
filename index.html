@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tretis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>TRETIS</h1>
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="controls">
+        <button onclick="moveLeft()">⬅️</button>
+        <button onclick="rotatePiece()">🔄</button>
+        <button onclick="moveRight()">➡️</button>
+        <button onclick="dropPiece()">⬇️</button>
+    </div>
+
+    <p>Puntaje: <span id="score">0</span></p>
+    <p>Récord: <span id="highScore">0</span></p>
+
+    <div id="game-over" class="hidden">
+        <h2>Game Over</h2>
+        <p>Puntaje: <span id="final-score"></span></p>
+        <button onclick="restartGame()">Reiniciar</button>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
